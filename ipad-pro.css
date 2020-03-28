@@ -1,0 +1,132 @@
+.device,
+.device::before,
+.device::after,
+.device *,
+.device *::before,
+.device *::after {
+  box-sizing: border-box;
+  display: block;
+}
+
+.device-ipad {
+  position: relative;
+  transform: scale(0.2);
+  z-index: 1;
+}
+
+.device .device-frame {
+  z-index: 1;
+}
+
+.device .device-content {
+  background-color: #fff;
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+
+.device-ipad-pro {
+    height: 804px;
+    width: 560px;
+    position: relative;
+    bottom: 1546px;
+    left: 100px;
+  }
+  
+  .device-ipad-pro .device-frame {
+    background: #fff;
+    border-radius: 38px;
+    box-shadow: inset 0 0 0 2px #c8cacb, inset 0 0 0 6px #e2e3e4;
+    height: 804px;
+    padding: 62px 25px;
+    width: 560px;
+  }
+  
+  .device-ipad-pro .device-content {
+    border: 2px solid #222;
+    border-radius: 2px;
+    height: 680px;
+    width: 510px;
+  }
+  
+  .device-ipad-pro .device-header {
+    border: 2px solid #c8cacb;
+    border-radius: 50%;
+    bottom: 17px;
+    height: 34px;
+    left: 50%;
+    margin-left: -17px;
+    position: absolute;
+    width: 34px;
+  }
+  
+  .device-ipad-pro .device-sensors {
+    background: #666;
+    border-radius: 50%;
+    height: 10px;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    position: absolute;
+    top: 34px;
+    width: 10px;
+  }
+  
+  .device-ipad-pro.device-gold .device-frame {
+    box-shadow: inset 0 0 0 2px #e4b08a, inset 0 0 0 6px #f7e8dd;
+  }
+  
+  .device-ipad-pro.device-gold .device-header {
+    border-color: #e4b08a;
+  }
+  
+  .device-ipad-pro.device-rosegold .device-frame {
+    box-shadow: inset 0 0 0 2px #f6a69a, inset 0 0 0 6px #facfc9;
+  }
+  
+  .device-ipad-pro.device-rosegold .device-header {
+    border-color: #f6a69a;
+  }
+  
+  .device-ipad-pro.device-spacegray .device-frame {
+    background: #222;
+    box-shadow: inset 0 0 0 2px #818187, inset 0 0 0 6px #9b9ba0;
+  }
+  
+  .device-ipad-pro.device-spacegray .device-header {
+    border-color: #818187;
+  }
+
+  @media (min-width: 768px) {
+    .device-ipad {
+      position: relative;
+      transform: scale(0.3);
+      z-index: 100;
+    }
+
+    .device-ipad-pro {
+        height: 804px;
+        width: 560px;
+        position: relative;
+        bottom: 1460px;
+        left: 150px;
+      }
+  }
+
+  @media (min-width: 1200px) {
+    .device-ipad {
+      position: relative;
+      transform: scale(0.4);
+      z-index: 100;
+    }
+
+    .device-ipad-pro {
+        height: 804px;
+        width: 560px;
+        position: relative;
+        bottom: 1390px;
+        left: 200px;
+      }
+  }
+  
